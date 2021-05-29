@@ -6,11 +6,20 @@
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script src="https://kit.fontawesome.com/5e1b334ba9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #C74634;">
+      <a class="navbar-brand" style="color: #ffffff" href="#">Yelp</a>
+    </nav>
+
+    <div class="container mt-4">
+      <%= yield %>
+    </div>
   </body>
 </html>
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;"
